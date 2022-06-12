@@ -1,0 +1,32 @@
+# Travis CI for hexo on GitHub Pages
+
+language: node_js
+node_js: stable
+
+# Build on which branches
+branches:
+  only:
+    - master
+
+install:
+  # install pandoc which is required by `hexo-renderer-pandoc`
+  # - wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb
+  # - sudo dpkg -i pandoc-2.7.3-1-amd64.deb
+  # `npm ci` is better than `npm install` on CI
+  - npm ci
+
+script:
+  - hexo g
+
+# deply to GitHub Pages https://docs.travis-ci.com/user/deployment/pages/
+deploy:
+  provider: pages
+  local_dir: public/
+  target_branch: gh-pages  # branch for GitHub Page
+  skip_cleanup: true
+  committer_from_gh: true
+  # Set in the settings page of your repository, as a secure variable
+  github_token: $GH_TOKEN
+  keep_history: false
+  on:
+    branch: master  # branch for the source files
