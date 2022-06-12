@@ -6,7 +6,7 @@
 menu:
   Home: /
   Archives: archives
-  Categories: categories
+  # Categories: categories
   Tags: tags
   About: about
 rss: /atom.xml
@@ -21,7 +21,7 @@ favicon: css/images/favicon.ico
 
 # Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
 # url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
-avatar: 
+avatar:
   enable: false
   width: 124
   height: 124
@@ -45,9 +45,9 @@ fancybox: true
 sidebar: right
 widgets:
 - search
-- social
+# - social
 - recent_posts
-- category
+# - category
 - tag
 - tagcloud
 - archive
@@ -55,13 +55,13 @@ widgets:
 # Social Links
 # Key is the name of FontAwsome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
-social:
-  Github: https://github.com/iTimeTraveler
-  Weibo: 
-  Twitter: 
-  Facebook: 
-  Google-plus: 
-  Instagram: 
+# social:
+#   Github: https://github.com/iTimeTraveler
+#   Weibo: 
+#   Twitter: 
+#   Facebook: 
+#   Google-plus:
+#   Instagram:
 
 
 # Search
@@ -72,11 +72,11 @@ search:
 
 
 # comment ShortName, you can choose only ONE to display.
-duoshuo_shortname: 
-disqus_shortname: 
+duoshuo_shortname:
+disqus_shortname:
 livere_shortname: MTAyMC8yOTQ4MS82MDQ5
-uyan_uid: 
-wumii: 
+uyan_uid:
+wumii:
 
 
 # Code Highlight theme
@@ -101,7 +101,7 @@ google_analytics:
 gauges_analytics:
 baidu_analytics:
 tencent_analytics:
-busuanzi_analytics: true
+busuanzi_analytics: false
 twitter:
 google_plus:
 fb_admins:
