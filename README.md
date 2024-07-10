@@ -11,7 +11,7 @@
     pnpm run dev
 
     ```
-  - Free org 似乎无法集成 github ci 自动上传到 gh-pages 分支。所以需要手动部署，我后面将开放开 `gh-pages` 分支的 push 权限。
+  - 集成 github ci 自动上传到 gh-pages 分支。也可以手动部署，我后面将开放开 `gh-pages` 分支的 push 权限。
     ```sh
     pnpm build
     pnpm run deploy
