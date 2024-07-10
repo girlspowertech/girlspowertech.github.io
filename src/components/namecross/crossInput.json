@@ -1,0 +1,36 @@
+[
+    {
+        "name": "CITRUS",
+        "nameClue": "A genus of flowering trees and shrubs in the rue family, Rutaceae."
+    },
+    {
+        "name": "MEOW",
+        "nameClue": "The sound a cat makes."
+    },
+    {
+        "name": "ELENA",
+        "nameClue": "A popular feminine given name."
+    },
+    {
+        "name": "EUNICE",
+        "nameClue": "A name of Greek origin meaning 'good victory'."
+    },
+    {
+        "name": "GUOYI",
+        "nameClue": "A common given name.",
+        "introduction": "I'm a frontend developer with two cats, Milktea and DietCoke",
+        "avatarURL": "public/avatars/guoyi.png"
+    },
+    {
+        "name": "IAN",
+        "nameClue": "A given name often used as a diminutive form of John."
+    },
+    {
+        "name": "MENRU",
+        "nameClue": "A given name."
+    },
+    {
+        "name": "NORA",
+        "nameClue": "A common feminine given name."
+    }
+]
