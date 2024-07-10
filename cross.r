@@ -5,7 +5,7 @@ library(jsonlite)
 # set seed for pseudo random number generator
 # set.seed(143)
 
-inputdata <- read_json("./src/components/namecross/crossInput.json", simplifyVector = TRUE)
+inputdata <- read_json("./src/components/namecross/workers.json", simplifyVector = TRUE)
 
 # create a new 4 by 4 crossword
 cw <- Crossword$new(rows = 10, columns = 10)
@@ -21,4 +21,4 @@ cw$add_words(
 )
 print(cw)
 exportJson <- toJSON(cw$words)
-write(exportJson, "./src/components/namecross/crossOutput.json")
+write(exportJson, "./src/components/namecross/crossInfo.json")
