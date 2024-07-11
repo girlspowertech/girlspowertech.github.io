@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import "./style.scss";
 import Avatar from "@assets/avatars/avatar.png";
-import coworkers from "@/components/namecross/crossInput.json";
+import coworkers from "@/components/namecross/workers.json";
 
 type memberProps = {
   name: string
@@ -20,7 +20,7 @@ const Member: FC<{name: string}> = ({ name }) => {
   const userDetails = getUserDetails(name)
 
   function getUserDetails(name: string): memberProps | undefined{
-    return coworkers.find((user) => user.name === name)
+    return coworkers.find((user) => user.name.toLocaleLowerCase() === name.toLocaleLowerCase())
   }
 
   return (

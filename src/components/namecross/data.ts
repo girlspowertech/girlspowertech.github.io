@@ -1,6 +1,6 @@
 
 // thanks to so interesting program: https://github.com/petermeissner/crossword.r
-import data from "./crossOutput.json";
+import data from "./crossInfo.json";
 
 type InputData = {
   row: number;
