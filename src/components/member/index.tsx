@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "./style.scss";
-import Avatar from "@assets/avatar.png";
+import Avatar from "@assets/avatars/avatar.png";
 import coworkers from "@/components/namecross/workers.json";
 
 type memberProps = {
