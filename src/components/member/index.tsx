@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "./style.scss";
-import Avatar from "@assets/avatars/avatar.png";
+import Avatar from "@assets/avatar.png";
 import coworkers from "@/components/namecross/workers.json";
 
 type memberProps = {
@@ -26,7 +26,7 @@ const Member: FC<{name: string}> = ({ name }) => {
   return (
     <div className="member">
       <div className="meta">
-        <img className="avatar" src={userDetails?.avatarURL || Avatar} alt={ name } />
+        <img className="avatar" src={userDetails?.avatarURL|| Avatar} alt={ name } />
         <p className="name">{ name }</p>
       </div>
       <div className="intro">
