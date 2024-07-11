@@ -14,14 +14,14 @@
     {
         "name": "EUNICE",
         "nameClue": "A name of Greek origin meaning 'good victory'.",
-        "avatarURL": "public/avatars/eunice.svg",
+        "avatarURL": "./public/avatars/eunice.svg",
         "introduction": "Eunice 是一名喜欢好看和有趣的交互设计的 FE。Eunice 想搞点事情。Eunice 在希腊语里是 “快乐的胜利” 之意。"
     },
     {
         "name": "GUOYI",
         "nameClue": "A common given name.",
         "introduction": "Guoyi 喜欢写码也喜欢hiking，喜欢猫也喜欢狗。",
-        "avatarURL": "public/avatars/guoyi.png"
+        "avatarURL": "./public/avatars/guoyi.png"
     },
     {
         "name": "IAN",
@@ -39,6 +39,6 @@
         "name": "fish",
         "nameClue": "A common given name.",
         "introduction": "fish 是一名转码开发未半而中道崩殂的产品,正在努力自学的FE,fish 是读书期间好朋友因为我的中文名谐音起的昵称。",
-        "avatarURL": "public/avatars/fish.svg"
+        "avatarURL": "./public/avatars/fish.svg"
     }
 ]
