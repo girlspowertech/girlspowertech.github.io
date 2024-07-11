@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useMemo } from "react";
 import "./style.scss";
 import Avatar from "@assets/avatars/avatar.png";
 import coworkers from "@/components/namecross/workers.json";
@@ -17,7 +17,9 @@ const Member: FC<{name: string}> = ({ name }) => {
 ←  CLICK LEFT TO SELECT A MEMBER
     </div>
   }
-  const userDetails = getUserDetails(name)
+  const userDetails = useMemo(()=>{
+    return getUserDetails(name);
+  }, [name])
 
   function getUserDetails(name: string): memberProps | undefined{
     return coworkers.find((user) => user.name.toLocaleLowerCase() === name.toLocaleLowerCase())
