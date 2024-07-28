@@ -30,6 +30,6 @@ tags:
 
 ## WEEK 3 &nbsp; `2024/07/22 - 2024/07/28`
 
-0. 7.24 日：发布文章 [如何上手一个不熟悉的前端项目？](https://girlspower.tech/#/articles/how-to-start-a-project)
-1. 7.26 日：[PR15](https://github.com/girlspowertech/girlspowertech.github.io/pull/15) 新增 Windows 环境下的 pnpm 相关设置
-2. 7.26 日：于 Slack 进一步讨论了关于线上会议细节和流程
+1. 7.24 日：发布文章 [如何上手一个不熟悉的前端项目？](https://girlspower.tech/#/articles/how-to-start-a-project)
+2. 7.26 日：[PR15](https://github.com/girlspowertech/girlspowertech.github.io/pull/15) 新增 Windows 环境下的 pnpm 相关设置
+3. 7.26 日：于 Slack 进一步讨论了关于线上会议细节和流程
