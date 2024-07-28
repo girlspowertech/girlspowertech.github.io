@@ -6,6 +6,7 @@
     --accent-hover: #fdfcf0; 
     --border: #1f1e1e;
     --shadow: 7px 15px 13px -4px #00000056;
+    --logo-image: url("./logo.svg");
 }
 
 [data-theme='dark'] {
@@ -16,4 +17,5 @@
     --accent-hover: #050100; 
     --border: #696969;
     --shadow: 7px 15px 13px -4px #ffffff1b;
+    --logo-image: url("./logo_black.svg");
 }
