@@ -1,15 +1,20 @@
+import { useEffect } from 'react';
 import './style.scss';
 import { useTheme } from "@/hooks/useTheme";
 
 export const Switch = () => {
 
-    const [theme, handleChange] = useTheme('light');
+    const {theme, setTheme}= useTheme();
+
+    useEffect(() => {
+        document.body.setAttribute('data-theme', theme);
+    }, [theme])
 
     return (
         <div className="container-switch">
             <span>Change Theme </span>
             <label className="switch">
-                <input type="checkbox" onChange={handleChange} checked={theme === 'dark'} />
+                <input type="checkbox" onChange={()=>setTheme(theme === 'light'?'dark': 'light')} />
                 <span className="slider"></span>
             </label>
         </div>

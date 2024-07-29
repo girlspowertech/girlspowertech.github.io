@@ -1,20 +1,31 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
-type ChangeEvent = React.ChangeEvent<HTMLInputElement>
+type Theme = 'light' | 'dark';
 
-type Theme = 'dark' | 'light'
+export const useTheme = () => {
+  const [theme, setTheme] = useState<Theme>(() => {
+    const savedTheme = localStorage.getItem('theme') as Theme | null;
+    if (savedTheme) {
+      return savedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
 
-type useThemeReturn = [ string, (e: ChangeEvent) => void ];
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = () => {
+      if (!localStorage.getItem('theme')) {
+        setTheme(mediaQuery.matches ? 'dark' : 'light');
+      }
+    };
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
-export const useTheme = (initialTheme:Theme): useThemeReturn => {
+  const setThemeWithSave = (newTheme: Theme) => {
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
 
-    const [theme, setTheme] = useState<Theme>(initialTheme)
-
-    const handleChange = (e: ChangeEvent) => setTheme(e.target.checked ? 'dark' : 'light')
-
-    useEffect(() => {
-        document.body.setAttribute('data-theme', theme);
-    }, [theme])
-
-    return [theme, handleChange]
-}
+  return { theme, setTheme : setThemeWithSave };
+};
