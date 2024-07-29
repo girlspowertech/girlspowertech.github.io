@@ -1,7 +1,7 @@
 .article {
   margin-top: -30px;
   padding-bottom: 50px;
-  color: #191919;
+  color: var(--text-secondary);
 
   h1,
   h2,
@@ -43,7 +43,7 @@
   }
 
   a {
-    color: #191919;
+    color: var(--text-secondary);
 
     text-underline-offset: 4px;
     font-weight: 500;
