@@ -17,7 +17,9 @@ tags:
 ### 1. PREREQUISITION
 
 1. 你有一台可访问 Github 的 PC
+   - 国内访问较慢
 2. 你有自己的 Github 账号
+   - 在此注册 https://github.com/signup
 3. 你已经在浏览器登陆了 Github
 
 
@@ -93,3 +95,16 @@ tags:
 🍻 最后点击下方按钮提交 PR！一般 vercel 会马上在 comments 中提供一个可预览的链接帮助 preview
 
 ![](/docs/imgs/5.png)
+
+
+### 3. 提交一篇新的文章
+
+例子 2 是成员提交一篇新的文章到团队博客
+
+请了解 [markdown](https://markdownlivepreview.com/) 格式然后使用该格式写文章
+
+基本方法于上传自己的头像类似，只是需要在 `public/docs` 目录下新建一个 .md 文件，提交 PR
+
+有一个注意事项是，请时时关注你的仓库是否与上游仓库同步，如果不是同步，点击下方 `Sync fork` 按钮拉取上游更新，否则无法提交 PR
+
+![](/docs/imgs/sync.png)
