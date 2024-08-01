@@ -99,12 +99,13 @@ tags:
 
 ### 3. 提交一篇新的文章
 
-例子 2 是成员提交一篇新的文章到团队博客
+例子 2 是成员提交一篇新的文章到团队博客，基本方法于上传自己的头像类似，需要在 `public/docs/` 目录下新建一个 .md 文件。如果有图片，请上传在 `public/docs/imgs/` 目录下，然后在 md 文件中以 `/docs/imgs/:id` 开头引用。
 
 请了解 [markdown](https://markdownlivepreview.com/) 格式然后使用该格式写文章
 
-基本方法于上传自己的头像类似，只是需要在 `public/docs` 目录下新建一个 .md 文件，提交 PR
 
-有一个注意事项是，请时时关注你的仓库是否与上游仓库同步，如果不是同步，点击下方 `Sync fork` 按钮拉取上游更新，否则无法提交 PR
+### 4. Tips
 
-![](/docs/imgs/sync.png)
+- 请时时关注你的仓库是否与上游仓库同步，如果不是同步，点击下方 `Sync fork` 按钮拉取上游更新，否则无法提交 PR
+
+  ![](/docs/imgs/sync.png)
