@@ -14,7 +14,7 @@ tags:
 下面将以两个例子展开说明如何不使用 git 命令提交自己的改动并提交 PR 到上游。
 
 
-### 1. PREREQUISITION
+### 1. PREREQUISITES
 
 1. 你有一台可访问 Github 的 PC
    - 国内访问较慢
