@@ -15,7 +15,7 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       framer-motion:
-        specifier: ^11.3.17
+        specifier: ^11.3.8
         version: 11.3.17(@emotion/is-prop-valid@1.2.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       path:
         specifier: ^0.12.7
