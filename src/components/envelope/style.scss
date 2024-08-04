@@ -5,7 +5,7 @@
   background-color: var(--bg-color);
   color: var(--color);
   padding: 10px 20px;
-  max-width: 680px;
+  max-width: 720px;
   min-width: 400px;
   min-height: 180px;
   display: flex;
@@ -14,12 +14,12 @@
   .header {
     display: flex;
     justify-content: space-between;
-    align-items: start;
 
-    >h3 {
-      font-size: 32px;
+    > h3 {
+      font-size: 25px;
       margin: 10px 0;
     }
+
     .date {
       font-size: 12px;
     }
@@ -31,7 +31,8 @@
     margin: 10px 0;
     flex-wrap: wrap;
 
-    >span {
+    > span {
+      font-size: 15px;
       background-color: var(--color);
       color: var(--bg-color);
       padding: 5px 10px;
@@ -43,5 +44,31 @@
     position: absolute;
     right: 20px;
     bottom: 10px;
+  }
+}
+
+/* Media Query for mobile device (600px) */
+@media (max-width: 600px) {
+  .envelope {
+    width: 80vmin;
+    min-width: 200px;
+    min-height: 120px;
+
+    .header {
+      h3 {
+        font-size: 20px;
+        width: 70%;
+      }
+    }
+
+    .tags {
+      > span {
+        font-size: 12px;
+      }
+    }
+
+    .postmark-stamp {
+      size: 80px;
+    }
   }
 }

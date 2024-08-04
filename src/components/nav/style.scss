@@ -3,17 +3,33 @@ nav {
   flex-direction: column;
 
   a {
-    font-size: 21px;
     color: var(--text-secondary);
+    font-size: 18px;
     letter-spacing: 1.3px;
     text-decoration: none;
     margin: 10px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
 
     &.active,
     &:hover {
       font-weight: 600;
       text-underline-offset: 3px;
       text-decoration: underline;
+    }
+  }
+}
+
+/* Media Query for mobile device (600px) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    align-items: flex-end;
+
+    a {
+      font-size: 20px;
     }
   }
 }

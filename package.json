@@ -1,6 +1,7 @@
 {
   "name": "girlspowertech",
   "description": "The homepage for our program",
+  "homepage": "https://girlspower.tech/",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -18,6 +19,7 @@
     "react": "18.2.0",
     "react-crossword": "git+https://github.com/anig1scur/react-crossword.git",
     "react-dom": "18.2.0",
+    "react-responsive": "^10.0.0",
     "react-router-dom": "6.4.3",
     "yaml": "^2.4.5"
   },

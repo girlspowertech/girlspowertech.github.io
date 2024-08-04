@@ -1,12 +1,20 @@
 .crossword {
-  width: 525px;
-  height: 525px;
-  min-width: 525px;
-  min-height: 525px;
+  width: 60%;
+  min-width: 60%;
   font-weight: 600;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .clues {
   display: none;
+}
+
+/* Media Query for mobile device (600px) */
+@media (max-width: 600px) {
+  .crossword {
+    width: 90vmin;
+    height: 90vmin;
+    min-width: 300px;
+    min-height: 300px;
+  }
 }
