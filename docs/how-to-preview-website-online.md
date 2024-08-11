@@ -1,14 +1,15 @@
 ---
-title: 如何通过 Github Pages 预览自己 GitHub 上的网页项目
+title: 如何通过 Github Pages 预览 GitHub 上的项目
 date: 2024-08-11
 
 tags:
   - tutorial
 ---
 
-## 如何通过 Github Pages 预览自己 GitHub 上的网页项目
+## 如何通过 Github Pages 预览 GitHub 上的项目
 
 这里的网页项目可以是自己创建的 Github 网页项目，也可以是 fork 过来的网页项目。
+
 我在提交了移动端适配样式的 PR 以后，想线上预览网页效果，但因为 Vercel 有限制访问，Eunice 推荐我可以用 GitHub Pages 来预览网页。
 
 ### 使用步骤
