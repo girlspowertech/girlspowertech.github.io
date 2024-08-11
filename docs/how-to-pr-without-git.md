@@ -90,7 +90,7 @@ tags:
 
 ### 3. 提交一篇新的文章
 
-例子 2 是成员提交一篇新的文章到团队博客，基本方法于上传自己的头像类似，需要在 `public/docs/` 目录下新建一个 .md 文件。如果有图片，请上传在 `public/docs/imgs/git/` 目录下，然后在 md 文件中以 `/docs/imgs/git/:photo_name` 开头引用。
+例子 2 是成员提交一篇新的文章到团队博客，基本方法于上传自己的头像类似，需要在 `public/docs/` 目录下新建一个 .md 文件。如果有图片，请上传在 `public/docs/imgs/` 目录下 （可视情况看要不要新建子文件夹），然后在 md 文件中以 `/docs/imgs/:photo_name` 开头引用。
 
 #### 3.1 了解 Markdown
 
